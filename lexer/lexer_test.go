@@ -12,6 +12,8 @@ let ten = 10;
      x + y;
 };
    let result = add(five, ten);
+   !-/*5;
+   5 < 10 > 5;
    `
 
 	tests := []struct {
@@ -54,6 +56,8 @@ let ten = 10;
 		{token.IDENT, "ten"},
 		{token.RPAREN, ")"},
 		{token.SEMICOLON, ";"},
+		{token.ILLEGAL, "!"},
+		{token.MINUS, "-"},
 		{token.EOF, ""},
 	}
 
