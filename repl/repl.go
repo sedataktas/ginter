@@ -13,7 +13,7 @@ const PROMPT = ">>"
 func Start(in io.Reader, out io.Writer) {
 	scanner := bufio.NewScanner(in)
 	for scanner.Scan() {
-		fmt.Printf(PROMPT)
+		fmt.Print(PROMPT)
 		line := scanner.Text()
 		if line != "" {
 			l := lexer.New(line)
