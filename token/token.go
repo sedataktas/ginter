@@ -39,6 +39,9 @@ const (
 
 	EQ     = "=="
 	NOT_EQ = "!="
+
+	LBRACKET = "["
+	RBRACKET = "]"
 )
 
 type TokenType string
